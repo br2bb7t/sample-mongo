@@ -1,10 +1,10 @@
-# Platzi Mongo
-Todo el código que escribirás para el proyecto platzi-mongo
+# Sample Mongo
+Todo el código que escribirás para el proyecto sample-mongo
 estará en el archivo db.py
 
 # Postman
 1. Descargar e instalar [Postman](https://www.getpostman.com/downloads/)
-2. La URI de las colecciones de Postman usada para el proyecto está en [Postman-platzi-mongo](https://www.getpostman.com/collections/ffcbfb5c8d5cd2dc52d2)
+2. La URI de las colecciones de Postman usada para el proyecto está en [Postman-sample-mongo](https://www.getpostman.com/collections/ffcbfb5c8d5cd2dc52d2)
 3. Importar colección dentro de Postman [Instrucciones](https://learning.getpostman.com/docs/postman/collections/data_formats/#exporting-and-importing-postman-data)
 
 ## Instalar Anaconda 
@@ -14,11 +14,11 @@ Con Anaconda instalado de manera correcta, navegar hasta el directorio del proye
 y ejecutar: 
 ```
 # navegar hasta el directorio del proyecto
-cd platzi-mongo
+cd sample-mongo
 # crear un nuevo ambiente
-conda create --name platzi-mongo
+conda create --name sample-mongo
 # activar el ambiente 
-conda activate platzi-mongo
+conda activate sample-mongo
 # para desactivar el ambiente
 conda deactivate
 ```
@@ -31,14 +31,14 @@ Con el ambiente activado, instalar las dependencias:
 pip install -r requirements.txt
 ```
 ## Variables de entorno necesarias para ejecutar el proyecto
-Asegurate de reemplazar el valor de PLATZI_DB_URI por la URI de tu cluster en MongoDB Atlas
+Asegurate de reemplazar el valor de SAMPLE_DB_URI por la URI de tu cluster en MongoDB Atlas
 ```
-export FLASK_APP=platzi-api
+export FLASK_APP=sample-api
 export FLASK_ENV=development 
-export PLATZI_DB_URI="MONGO-URI"
+export SAMPLE_DB_URI="MONGO-URI"
 ```
 
-## Iniciar el servidor de platzi-mongo
+## Iniciar el servidor de sample-mongo
 ```
 flask run
 ```
